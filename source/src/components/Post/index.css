@@ -1,0 +1,29 @@
+.btn {
+    margin-left: 20px;
+}
+
+.anticon {
+    vertical-align: middle!important;
+}
+
+.user-name {
+    font-weight: 400;
+    color: #000;
+}
+
+.info-post p {
+    margin: 0;
+}
+
+.post-content,
+.info-post {
+    font-weight: 500;
+}
+
+.post-content {
+    margin-top: 0.6rem;
+}
+
+.post-content strong {
+    color: rgb(12, 35, 243);
+}
