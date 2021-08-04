@@ -6,12 +6,12 @@ import Post from '../../components/Post';
 const Search = (props) => {
     const { postList } = props;
     const { keyword } = useParams();
-    const resultsPost = postList.filter(p => p.title.includes(keyword));
+    const resultsPost = postList.filter(p => p.title.toLowerCase().includes(keyword.toLowerCase()));
     return (
         <div className="container">
             {resultsPost ?
                 <>
-                    <Alert className="my-5 text-center" message={`Found ${resultsPost.length} results`} type="success" />
+                    <Alert className="my-5 text-center" message={`Found ${resultsPost.length} results  with keyword "${keyword}"`} type="success" />
                     {resultsPost.map(post => {
                         return <Post post={post} />
                     })}
